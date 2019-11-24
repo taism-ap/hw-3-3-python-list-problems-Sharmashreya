@@ -11,74 +11,26 @@ def random_list(largest,size):
     l.append(n)
 #return the list to check
   return(l)
+  
 #Define function sort_list
 def sort_list():
 #Create random list with the largest integer, 10, and size of 10
   l = random_list(10,10)
 #Print the list
   print(l)
-#Create empty list j
-  j = []
-#Define variable a and set it equal to 0
-  a = 0
-#Start for loop to repeat as many times as the list is large
+#Create empty list k
+  k = []
+#Start for loop to last as long as there are elements in the list
   for i in range(10):
-#If conditional statement if any variable is equal to 0, add it to the list first
-   if l[i] == a:
-     x = l[i]
-     j.append(x)  
-#Repeat steps mentioned above for each integer from the minimum to the maximum value
-  for i in range(10):
-    if l[i] == a + 1:
-       x = l[i]
-       j.append(x)
+#Start a second for loop that also lasts as long as there are elements in the list
+    for j in range(10):
+#Compare each value on the list to j, which goes from 0 and adds one each time it goes through this loop. If it is equal to 0, add it to the empty list k. 
+      if l[j] == i:
+        x = l[j]
+        k.append(x)
 
-  for i in range(10):
-    if l[i] == a + 2:
-       x = l[i]
-       j.append(x)
-
-  for i in range(10):
-    if l[i] == a + 3:
-       x = l[i]
-       j.append(x)
-  
-  for i in range(10):
-    if l[i] == a + 4:
-       x = l[i]
-       j.append(x)
-  
-  for i in range(10):
-    if l[i] == a + 5:
-       x = l[i]
-       j.append(x)
-  
-  for i in range(10):
-    if l[i] == a + 6:
-       x = l[i]
-       j.append(x)
-  
-  for i in range(10):
-    if l[i] == a + 7:
-       x = l[i]
-       j.append(x)
-  
-  for i in range(10):
-    if l[i] == a + 8:
-       x = l[i]
-       j.append(x)
-  
-  for i in range(10):
-    if l[i] == a + 9:
-       x = l[i]
-       j.append(x)
-  
-  for i in range(10):
-    if l[i] == a + 10:
-       x = l[i]
-       j.append(x)
-#Return j
-  return(j)
-#Define j again and print 
-j = sort_list()
-print(j)
+#Return k
+  return(k)
+#Define k again and print 
+k = sort_list()
+print(k)
